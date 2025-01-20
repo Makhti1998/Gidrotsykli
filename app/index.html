@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -7,17 +7,116 @@
   <title>Document</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Comfortaa:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
 
-  <header class="header"></header>
-  <div class="wrapper">
-    <main class="main"></main>
-    <footer class="footer"></footer>
-  </div>
+  <header class="header">
+    <div class="header__top">
+      <div class="container">
+        <div class="header__top-inner">
+          <!-- nav.menu>ul.menu__list>li.menu__item*3>a.menu__link -->
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Магазины
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Акции
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Доставка и оплата
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <a class="logo" href="#">
+            <img class="logo__img" src="images/logo.svg" alt="logo">
+          </a>
+          <div class="header__box">
+            <p class="header__adress">
+              Москва, ул. Науки 25
+            </p>
+            <!-- ul.user-list>li.user__list-item*3 -->
+            <ul class="user__list">
+              <li class="user__list-item">
+                <a class="user__list-link" href="#">
+                  <img src="images/hearth.svg" alt="">
+                </a>
+              </li>
+              <li class="user__list-item">
+                <a class="user__list-link" href="#">
+                  <img src="images/user.svg" alt="">
+                </a>
+              </li>
+              <li class="user__list-item">
+                <a class="user__list-link basket" href="#">
+                  <img src="images/basket.svg" alt="">
+                  <p class="basket__num">1</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <div class="container">
+        <ul class="menu__categories">
+          <!-- li.menu__categories-item*8>a.menu__categories-link -->
+          <li class="menu__categories-item">
+            <a class="menu__categories-link" href="#">
+              Квадроциклы
+            </a>
+          </li>
+          <li class="menu__categories-item">
+            <a class="menu__categories-link" href="#">
+              Катера
+            </a>
+          </li>
+          <li class="menu__categories-item">
+            <a class="menu__categories-link" href="#">
+              Гидроциклы
+            </a>
+          </li>
+          <li class="menu__categories-item">
+            <a class="menu__categories-link" href="#">
+              Лодки
+            </a>
+          </li>
+          <li class="menu__categories-item">
+            <a class="menu__categories-link" href="#">
+              Вездеходы
+            </a>
+          </li>
+          <li class="menu__categories-item">
+            <a class="menu__categories-link" href="#">
+              Снегоходы
+            </a>
+          </li>
+          <li class="menu__categories-item">
+            <a class="menu__categories-link" href="#">
+              Двигатели
+            </a>
+          </li>
+          <li class="menu__categories-item">
+            <a class="menu__categories-link" href="#">
+              Запчасти
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+
 
 
 

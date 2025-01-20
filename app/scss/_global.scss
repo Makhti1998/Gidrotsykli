@@ -1,28 +1,37 @@
-html,
+html {
+  font-size: 10px;
+}
+
 body {
-	height: 100%;
+  font-family: "SFProDisplay-Regular", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  color: #2f3035;
 }
 
-.wrapper {
-	display: flex;
-	flex-direction: column;
-	min-height: 100%;
-}
-
-.main {
-	flex: 1 0 auto;
-}
-.footer {
-	flex: 0 0 auto;
-}
-
-.container{
-  max-width: 1200px;
+.container {
+  max-width: 123rem;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 1.5rem;
 }
 
+.basket {
+  position: relative;
+}
 
-
-
-
+.basket__num {
+  font-family: "SFProDisplay-Medium", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 2rem;
+  position: absolute;
+  right: -14px;
+  bottom: -15px;
+  width: 2rem;
+  height: 2rem;
+  color: #fff;
+  background-color: #1c62cd;
+  border-radius: 50%;
+  text-align: center;
+}
