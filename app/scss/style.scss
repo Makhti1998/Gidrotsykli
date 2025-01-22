@@ -33,7 +33,7 @@
     }
   }
   &__bottom {
-    margin-bottom: 7.8rem;
+    margin-bottom: 8rem;
   }
 }
 
@@ -87,5 +87,175 @@
   }
   &__list-item {
     padding-right: 1rem;
+  }
+}
+
+.banner-slider {
+  max-width: 87rem;
+}
+
+.banner-section {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__slider {
+  }
+  &__slider-item {
+  }
+  &__item {
+  }
+  &__slider-img {
+    object-fit: cover;
+  }
+}
+
+.sale-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  max-width: 26.5rem;
+  height: 40rem;
+  margin-left: 0.7rem;
+  &__top {
+    display: flex;
+    gap: 5.9rem;
+    align-items: start;
+    justify-content: space-between;
+  }
+  &__info {
+    color: #fff;
+    background-color: #1c62cd;
+    padding: 0.8rem 2rem;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.1em;
+  }
+  &__price {
+    min-width: 11.7rem;
+    text-align: right;
+  }
+  &__price-new {
+    font-weight: 700;
+    font-size: 2.7rem;
+    line-height: 3.2rem;
+    color: #1c62cd;
+    margin-right: 0.6rem;
+    padding-right: 2rem;
+    position: relative;
+    &::after {
+      content: "";
+      background-image: url("../images/rubl-blue.svg");
+      position: absolute;
+      top: 8px;
+      right: 0;
+      width: 1.5rem;
+      height: 1.8rem;
+    }
+  }
+  &__price-old {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    color: #c4c4c4;
+    margin-right: 1.5rem;
+    background-image: url("../images/line.svg");
+    padding: 0.2rem 0.5rem;
+    background-repeat: no-repeat;
+    display: inline-block;
+    &::after {
+      content: "";
+      background-image: url("../images/rubl-grey.svg");
+      position: absolute;
+      top: 8px;
+      right: -10px;
+      width: 8px;
+      height: 10px;
+    }
+  }
+  &__img {
+    object-fit: contain;
+  }
+  &__title {
+    font-family: "SFProDisplay-Bold", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.1rem;
+    margin-bottom: 0.7rem;
+  }
+  &__footer {
+    font-size: 1.8rem;
+    background-color: #f0f0f4;
+    padding: 2.5rem 2rem;
+    line-height: 2.1rem;
+    span {
+      font-family: "Barlow", serif;
+      font-weight: 700;
+      display: inline-block;
+      color: #1c62cd;
+    }
+  }
+  &__date {
+  }
+}
+
+.price {
+  position: relative;
+  font-family: "Barlow", serif;
+}
+
+.search {
+  &__inner {
+  }
+  &__tabs {
+    margin-bottom: 2.5rem;
+  }
+  &__tabs-item {
+    padding: 1.1rem 2.6rem 1.2rem;
+    &--active {
+      font-family: "SFProDisplay-Bold", sans-serif;
+      font-weight: 700;
+      border-radius: 5px;
+      background-color: #f0f0f4;
+    }
+  }
+  &__content {
+  }
+  &__content-item {
+    display: none;
+    &--active {
+      display: block;
+    }
+  }
+  &__content-form {
+    display: flex;
+  }
+  &__content-input {
+    font-family: "SFProDisplay-Regular", sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #656464;
+    background-color: #f0f0f4;
+    padding: 0.5rem 2rem;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    width: 100%;
+  }
+  &__content-btn {
+    font-family: "SFProDisplay-Bold", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #1c62cd;
+    border-radius: 3px;
+    padding: 1.7rem 4rem;
   }
 }
